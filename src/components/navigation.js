@@ -16,9 +16,9 @@ const Navigation = () => (
         </Link>
       </li>
       <li className={styles.navigationItem}>
-        <Link to="https://truckpartsinventory.com/" activeClassName="active">
+        <a href="https://truckpartsinventory.com/" >
           Inventory
-        </Link>
+        </a>
       </li>
       <li className={styles.navigationItem}>
         <Link to="/gallery/" activeClassName="active">
