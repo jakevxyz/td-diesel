@@ -16,6 +16,8 @@ class MyGallery extends React.Component {
     yardGallery.photos.forEach( photo =>
       photos.push({
         src: photo.file.url,
+        width: Math.ceil(photo.file.details.image.width/1000),
+        height: Math.ceil(photo.file.details.image.height/1000),
       }))
 
     return (
