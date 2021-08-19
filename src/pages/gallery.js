@@ -6,6 +6,7 @@ import Seo from '../components/seo'
 import Layout from '../components/layout'
 import Hero from '../components/hero'
 import Gallery from 'react-photo-gallery'
+import Container from '../components/container'
 
 class MyGallery extends React.Component {
   render() {
@@ -21,7 +22,9 @@ class MyGallery extends React.Component {
       <Layout>
         <Seo title="Gallery" />
         <Hero title="Gallery" />
-        <Gallery photos={photos} />
+        <Container>
+          <Gallery photos={photos} />
+        </Container>
       </Layout>
     )
   }
