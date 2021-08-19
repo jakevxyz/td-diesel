@@ -2,7 +2,6 @@ import React from 'react'
 import Seo from '../components/seo'
 import Layout from '../components/layout'
 import Hero from '../components/hero'
-import Container from '../components/container'
 
 import GoogleMapReact from 'google-map-react'
 import styled from 'styled-components'
@@ -25,7 +24,7 @@ const ContactInfo = "Phone: 555-5555";
 class Contact extends React.Component {
   static defaultProps = {
     center: {
-      lat: 33.9,
+      lat: 34.0,
       lng: -84.0
     },
     zoom: 9
@@ -35,23 +34,21 @@ class Contact extends React.Component {
       <Layout>
         <Seo title="Contact" />
         <Hero title="Contact" content={ContactInfo} />
-      <div style={{ height: '50vh', width: '100%' }}>
-        <Container>
-          <Wrapper>
-            <GoogleMapReact
-              bootstrapURLKeys={{ key: "AIzaSyC7qHeNxIz1tjin4ly5bVWrzl0nNikVkLM" }}
-              defaultCenter={this.props.center}
-              defaultZoom={this.props.zoom}
-            >
-              <Marker
-                key={HQ.key}
-                text={HQ.text}
-                lat={HQ.lat}
-                lng={HQ.lng}
-              />
-            </GoogleMapReact>
-          </Wrapper>
-        </Container>
+      <div style={{ height: '50vh', width: '100%', paddingLeft: '15%', paddingRight: '15%' }}>
+        <Wrapper>
+          <GoogleMapReact
+            bootstrapURLKeys={{ key: "AIzaSyC7qHeNxIz1tjin4ly5bVWrzl0nNikVkLM" }}
+            defaultCenter={this.props.center}
+            defaultZoom={this.props.zoom}
+          >
+            <Marker
+              key={HQ.key}
+              text={HQ.text}
+              lat={HQ.lat}
+              lng={HQ.lng}
+            />
+          </GoogleMapReact>
+        </Wrapper>
       </div>
       </Layout>
     )
