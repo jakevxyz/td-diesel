@@ -2,6 +2,7 @@ import React from 'react'
 import Seo from '../components/seo'
 import Layout from '../components/layout'
 import Hero from '../components/hero'
+import Container from '../components/container'
 
 import GoogleMapReact from 'google-map-react'
 import styled from 'styled-components'
@@ -35,20 +36,22 @@ class Contact extends React.Component {
         <Seo title="Contact" />
         <Hero title="Contact" content={ContactInfo} />
       <div style={{ height: '50vh', width: '100%' }}>
-        <Wrapper>
-          <GoogleMapReact
-            bootstrapURLKeys={{ key: "AIzaSyC7qHeNxIz1tjin4ly5bVWrzl0nNikVkLM" }}
-            defaultCenter={this.props.center}
-            defaultZoom={this.props.zoom}
-          >
-            <Marker
-              key={HQ.key}
-              text={HQ.text}
-              lat={HQ.lat}
-              lng={HQ.lng}
-            />
-          </GoogleMapReact>
-        </Wrapper>
+        <Container>
+          <Wrapper>
+            <GoogleMapReact
+              bootstrapURLKeys={{ key: "AIzaSyC7qHeNxIz1tjin4ly5bVWrzl0nNikVkLM" }}
+              defaultCenter={this.props.center}
+              defaultZoom={this.props.zoom}
+            >
+              <Marker
+                key={HQ.key}
+                text={HQ.text}
+                lat={HQ.lat}
+                lng={HQ.lng}
+              />
+            </GoogleMapReact>
+          </Wrapper>
+        </Container>
       </div>
       </Layout>
     )
