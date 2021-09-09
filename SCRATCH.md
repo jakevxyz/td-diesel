@@ -2,8 +2,7 @@
 
 ## Types of Content
 
-- parts
-- events
+- photos
 - services
   - on site
   - process
@@ -32,12 +31,17 @@
 - scan
 - rack
 - insert into TPI
-  - potential future photo carousel
 
 ## TODO
 
-- [ ] get gallery working
 - [ ] services
+- [ ] tddieselandparts.com
+- [ ] trucks inventory link
+- [ ] parts inventory link
+- [ ] auction link
+- [ ] Facebook link navigation bar
+- [ ] YouTube link navigation bar
+- [ ] address on contact page
 
 ## DONE
 
@@ -45,3 +49,4 @@
 - [x] adjust map window
 - [x] adjust map zoom
 - [x] adjust map marker style
+- [x] get gallery working
