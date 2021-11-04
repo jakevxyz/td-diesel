@@ -37,7 +37,7 @@ class Contact extends React.Component {
       <div style={{ height: '50vh', width: '100%', paddingLeft: '15%', paddingRight: '15%' }}>
         <Wrapper>
           <GoogleMapReact
-            bootstrapURLKeys={{ key: "AIzaSyC7qHeNxIz1tjin4ly5bVWrzl0nNikVkLM" }}
+            bootstrapURLKeys={{ key: "" }}  // find better way to insert key
             defaultCenter={this.props.center}
             defaultZoom={this.props.zoom}
           >
